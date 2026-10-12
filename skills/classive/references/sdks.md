@@ -6,18 +6,18 @@ Use the SDK for the project's language. Both packages use the REST API with a `c
 
 ## Install the intended version
 
-The SDKs share a repository but are separate installable packages. The initial 0.1.0 release is distributed as GitHub release assets; registry publication is pending. Check the [SDK README](https://github.com/classive-hq/sdk#install) and [releases](https://github.com/classive-hq/sdk/releases) before copying an installation command. Pin the selected release in the application's dependency file.
+The SDKs share a repository but are separate installable packages. The 0.1.1 release is distributed as GitHub release assets; registry publication is pending. Check the [SDK README](https://github.com/classive-hq/sdk#install) and [releases](https://github.com/classive-hq/sdk/releases) before copying an installation command. Pin the selected release in the application's dependency file.
 
 JavaScript/TypeScript, Node.js 20+:
 
 ```sh
-npm install https://github.com/classive-hq/sdk/releases/download/v0.1.0/classive-sdk-0.1.0.tgz
+npm install https://github.com/classive-hq/sdk/releases/download/v0.1.1/classive-sdk-0.1.1.tgz
 ```
 
 Python 3.11+:
 
 ```sh
-python -m pip install https://github.com/classive-hq/sdk/releases/download/v0.1.0/classive_sdk-0.1.0-py3-none-any.whl
+python -m pip install https://github.com/classive-hq/sdk/releases/download/v0.1.1/classive_sdk-0.1.1-py3-none-any.whl
 ```
 
 Install in the project's existing dependency environment. Do not replace its package manager, recreate its environment, publish a package or configure a new key just to use the SDK.
