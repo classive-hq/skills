@@ -6,12 +6,12 @@ Use the SDK for the project's language. Both packages use the REST API with a `c
 
 ## Install the intended version
 
-The SDKs share a repository but are separate installable packages. The 0.1.1 release is distributed as GitHub release assets; registry publication is pending. Check the [SDK README](https://github.com/classive-hq/sdk#install) and [releases](https://github.com/classive-hq/sdk/releases) before copying an installation command. Pin the selected release in the application's dependency file.
+The SDKs share a repository but are separate installable packages. JavaScript/TypeScript is published on npm as `@classive/sdk`. Python 0.1.1 is distributed as a GitHub release wheel while PyPI publication is pending. Check the [SDK README](https://github.com/classive-hq/sdk#install) and [releases](https://github.com/classive-hq/sdk/releases) before copying an installation command. Pin the selected release in the application's dependency file.
 
 JavaScript/TypeScript, Node.js 20+:
 
 ```sh
-npm install https://github.com/classive-hq/sdk/releases/download/v0.1.1/classive-sdk-0.1.1.tgz
+npm install @classive/sdk@0.1.1
 ```
 
 Python 3.11+:
