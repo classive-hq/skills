@@ -13,6 +13,7 @@ Choose your supported AI client in the installer. For a project-only installatio
 The [Classive skill](skills/classive/SKILL.md) routes to focused workflow guides:
 
 - [Connection and discovery](skills/classive/references/connect.md)
+- [JavaScript/TypeScript and Python SDKs](skills/classive/references/sdks.md)
 - [Clips, lessons and written packs](skills/classive/references/generate.md)
 - [Materials and book coverage](skills/classive/references/materials.md)
 - [Curricula and selected/full courses](skills/classive/references/curriculum.md)
@@ -21,6 +22,6 @@ The [Classive skill](skills/classive/SKILL.md) routes to focused workflow guides
 - [Delivery and learner/instructor packages](skills/classive/references/delivery.md)
 - [Application integration](skills/classive/references/integration.md)
 
-Each guide explains the agent's decisions and includes MCP/REST routes. Agents load only the files needed for the task, then fetch current schemas, limits, prices and client configuration from [Classive's Markdown documentation index](https://classive.app/llms.txt). The repository does not duplicate the live API manual.
+Each guide explains the agent's decisions and includes MCP/REST routes. The SDK reference adds installation and language method mappings for [classive-hq/sdk](https://github.com/classive-hq/sdk). Agents load only the files needed for the task, then fetch current schemas, limits, prices and client configuration from [Classive's Markdown documentation index](https://classive.app/llms.txt). The repository does not duplicate the live API manual.
 
 Installing instructions does not start generation, spend credits or configure credentials. MCP keys and REST keys are separate; uploads/downloads and some controls use REST or the dashboard.

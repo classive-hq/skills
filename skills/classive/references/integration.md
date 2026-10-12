@@ -1,12 +1,12 @@
 # Integrate Classive into an application
 
-Read this for API integration code, a content-generation feature or an application driven by an AI client. Fetch [OpenAPI](https://classive.app/openapi.json) plus only the relevant endpoint guides; do not copy the whole schema into this skill.
+Read this for API integration code, a content-generation feature or an application driven by an AI client. For JavaScript/TypeScript or Python, load [SDKs](sdks.md) for installation, typed calls and async/file helpers. Fetch [OpenAPI](https://classive.app/openapi.json) plus only the relevant endpoint guides; do not copy the whole schema into this skill.
 
 ## Keep the purchase asynchronous
 
 Use a server-side flow: validate the learning brief → obtain complete quote → apply the application's explicitly authorised scope/credit policy → accept once with an idempotency key → persist job ID → receive status updates → publish delivered learner files. A quote does not reserve credits or authorise itself. Check its expiry before accepting.
 
-Use MCP when an AI client is orchestrating the workflow; use REST when implementing application endpoints, uploads or downloads. Both reach the same organisation/job controls. The client may use either at a step if that operation exists and the appropriate credential is configured; credentials and schemas are not interchangeable.
+Use MCP when an AI client is orchestrating the workflow; use a language SDK or direct REST when implementing application endpoints, uploads or downloads. All reach the same organisation/job controls. Any step can use its documented SDK/MCP/REST method when the operation exists and the appropriate credential is configured; credentials and schemas are not interchangeable.
 
 Store the accepted input, quote, maximum customer credits, idempotency key, job/curriculum/child IDs and delivery manifest. These let interrupted clients reconcile a purchase without creating another one. Do not use a long synchronous browser request as the entire job lifecycle.
 

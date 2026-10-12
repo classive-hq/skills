@@ -1,6 +1,6 @@
 ---
 name: classive
-description: Create audience-aware learning resources and courses with Classive, review source materials, or integrate its asynchronous REST API and MCP workflows.
+description: Create audience-aware learning resources and courses with Classive, review source materials, or integrate its asynchronous API through MCP, REST, JavaScript or Python SDKs.
 ---
 
 # Classive
@@ -9,11 +9,12 @@ Use Classive to turn a learning brief or source materials into video, captions, 
 
 ## Load the relevant workflow
 
-Read only the references needed for the user's task. Each workflow includes MCP and REST routes; use the available transport without inventing unsupported MCP actions.
+Read only the references needed for the user's task. Workflows include MCP and REST routes; for application code, also load the SDK reference for the project's language. Use the available transport without inventing unsupported MCP actions.
 
 | Task | Reference |
 | --- | --- |
 | Connect a client, choose credentials, discover schemas | [Connection and discovery](references/connect.md) |
+| Install/use a JavaScript, TypeScript or Python SDK | [SDKs and language workflows](references/sdks.md) |
 | Create a clip, lesson, notes, quiz or flashcards | [Generate a learning resource](references/generate.md) |
 | Upload, find or reuse a book or other source | [Materials and document coverage](references/materials.md) |
 | Recommend, edit and approve a curriculum; generate all or selected lessons | [Curricula and courses](references/curriculum.md) |
@@ -29,6 +30,7 @@ These references teach the workflow, decisions and handoffs. Changing fields, sc
 - Find relevant pages in [llms.txt](https://classive.app/llms.txt), then fetch their individual Markdown URLs. Do not load `llms-full.txt` or every local reference for a small task.
 - For MCP, use `search_actions` to get current action IDs and argument schemas. Read tool results as well as transport status: a successful HTTP response can contain `isError`.
 - For REST, inspect the relevant Markdown endpoint guide and [OpenAPI JSON](https://classive.app/openapi.json). The [interactive reference](https://classive.app/api) is useful for humans.
+- For SDK code, use the selected package's types and [method/workflow reference](references/sdks.md). Check its pinned version against the live contract when fields or operations differ.
 - If the live schema differs from a reference's route or example, follow the live contract and make the discrepancy visible. Do not guess a replacement field or silently change the requested work.
 - If current docs cannot be fetched, use already-discovered schemas for covered operations; do not start paid work from an assumed contract.
 

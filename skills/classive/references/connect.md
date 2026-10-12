@@ -8,11 +8,12 @@ Read this when connecting an AI client or choosing a transport. Client-specific 
 | --- | --- | --- | --- |
 | MCP | `https://api.classive.app/mcp` | `cmcp_live_…` | Discover actions, quote, start, inspect jobs and control curricula |
 | REST | `https://api.classive.app` | `ck_live_…` | Application integration, uploads, downloads and REST-only controls |
+| JS/TS or Python SDK | Same REST API through [SDK resource methods](sdks.md) | `ck_live_…` | Typed application code, polling and file helpers |
 | Dashboard | `https://classive.app/app` | Signed-in session | Human management and file access |
 
 Use the credential already configured for the intended organisation. Owners/admins create separate MCP and REST keys on the same dashboard Keys page. Installing this skill does not install a key or connect a client.
 
-Classive MCP uses Streamable HTTP with a fixed bearer header. It does not offer OAuth. Follow the selected client's current header/secret syntax; another client's JSON or environment expansion is not portable.
+Classive MCP uses Streamable HTTP with a fixed bearer header. It does not offer OAuth. Follow the selected client's current header/secret syntax; another client's JSON or environment expansion is not portable. For language SDK installation and a read-only check such as `voices.list()`, load [SDKs](sdks.md).
 
 ## Discover before acting
 
